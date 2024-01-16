@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+}
+
+.banner-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+
+}
+
+.banner-text h1 {
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.bannerBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bannerBtn a {
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+
+}
+
+.bannerBtn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.836);
+    z-index: -1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.bannerBtn a:hover span {
+    width: 100%;
+}
+
+.bannerBtn a:hover {
+    color: rgb(39, 36, 36)
+}
+
+/* header area start */
+#navMenuBar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250;
+    top: 0;
+    background: #009688;
+    transition: .5s;
+}
+
+#navMenuBar ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+#navMenuBar ul li:first-child {
+    margin-top: 110px;
+}
+
+#navMenuBar ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 40px;
+    position: fixed;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    margin-top: 15px;
+    width: 20px;
+}
+
+/* header area end */
+
+/* features area star */
+#featurer {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.titleText {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.titleText p {
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.titleText p::after {
+    content: " ";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587, #fff);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.titleText h1 {
+    font-size: 50px;
+}
+
+.featureBox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.featuresImg{
+    flex-basis: 50%;
+    margin: auto;
+}
+.featuresImg img{
+    width: 70%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.features h1{
+    color: #019587;
+    text-align: left;
+    margin-bottom: center;
+    margin-bottom: 40px;
+}
+.featuresDesc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+/* features area end */
